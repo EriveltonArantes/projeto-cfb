@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+        .bg-AzulEscuro{
+            background-color: #046;
+        }
+        .bg-CinzaClaro{
+            background-color: #ddd;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="p-3 bg-info text-white d-flex justify-content-start">
+        <img src="https://get.wallhere.com/photo/1024x768-px-Brasil-Corinthians-1300173.jpg" class="w-25">
+        <h3 class="m-auto align-self-center">Vai Curintia</h3>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-AzulEscuro">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="na1" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="na2" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="na3" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Arquivos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="rounded p-2 mb-3 bg-CinzaClaro">
+                    <h2>Titulo do conteudo</h2>
+                    <h5>Descridcao</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis delectus sint maxime aperiam at modi eos. Nobis nam dolore commodi recusandae, ducimus vitae perspiciatis impedit exercitationem deserunt ipsum minus quidem!
+                    </p>
+                </div>
+
+                <div class="rounded p-2 mb-3 bg-CinzaClaro">
+                    <h2>Titulo do conteudo</h2>
+                    <h5>Descridcao</h5>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis delectus sint maxime aperiam at modi eos. Nobis nam dolore commodi recusandae, ducimus vitae perspiciatis impedit exercitationem deserunt ipsum minus quidem!
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                <h2>Sobre</h2>
+                <h5>Sobre curso</h5>
+                <p>Criacao de conteudo</p>
+                <h3 class="mt-4">Alguns cursos</h3>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n1" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">C++</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n2" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">C#</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n3" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Javascript</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n4" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Css</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="n5" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Html</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 p-4 bg-AzulEscuro text-white text-center">
+        <p>Canal Youtuve jsajsdk</p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const marcar=(obj)=>{
+            document.getElementById(obj).classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
